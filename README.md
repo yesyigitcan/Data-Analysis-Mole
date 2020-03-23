@@ -1,5 +1,6 @@
-# Data-Analysis-Mole
+# Data-Analysis-Mole <img src="mole.png" width="50px" height="50px">
 A tool to show brief information about a data set and reduce writing code snippets to save time
+
 
 <h2>The abilities that the app gives you</h2>
   1) Having a brief information about max, min, mean, median, standard deviation, quartiles etc. (numpy, pandas)

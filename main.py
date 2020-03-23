@@ -17,6 +17,7 @@ class MainWindow(QMainWindow):
         self.win = uic.loadUi('main.ui', self)
         self.win.setFixedSize(774, 455)
         self.splitLimit = 100
+        self.isSplit = 0
 
         self.win.loadDatasetButton.clicked.connect(self.loadDataset)
         self.win.plotDistributionButton.clicked.connect(self.plotDistribution)

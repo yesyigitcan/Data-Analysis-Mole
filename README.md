@@ -1,12 +1,12 @@
 # Data-Analysis-Mole
 A Tool to Show Brief Information about a Data Set
 
-# The abilities that the app gives you
+<h2>The abilities that the app gives you</h2>
   1) Having a brief information about max, min, mean, median, standard deviation, quartiles etc. (numpy, pandas)
   2) Using different kind of plots to visualize the data (seaborn, matplotlib)
   3) Splitting data into subsets by a feature (you can use the plots with these subsets two make feature analysis)
  
-# Libraries used
+<h2>Libraries used</h2>
   1) Pandas
   2) Numpy
   3) Seaborn
@@ -14,10 +14,10 @@ A Tool to Show Brief Information about a Data Set
   5) PyQt5
   6) Pyinstaller (it may be unnecessary if you do not use the app as exe file)
 
-# How to use
+<h2>How to use</h2>
 You can easily run the main.py scripts as you run your any other python scripts and you can also use exe by building the app with pyinstaller package.
 
-# Screenshots
+<h2>Screenshots</h2>
 <h3>Main Frame</h3>
 
 ![Image description](SS/1.png)

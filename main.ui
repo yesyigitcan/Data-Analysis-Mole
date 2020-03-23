@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="A tool for providing brief information about a data set">Data Analysis Mole</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>mole.png</normaloff>mole.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string>A tool for providing brief information about a data set</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="loadDatasetButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>430</y>
+      <width>381</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Dataset</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="featureListWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>256</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>76</y>
+      <width>391</width>
+      <height>262</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="typeLabel">
+       <property name="toolTip">
+        <string>Numeric, Some Numeric or Not Numeric</string>
+       </property>
+       <property name="text">
+        <string>Type: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="rowCountLabel">
+       <property name="toolTip">
+        <string>Number of Not NaN Rows</string>
+       </property>
+       <property name="text">
+        <string>Row Count: Waiting for data ;)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="uniqueRowCountLabel">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Unique Row Count: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="maxLabel">
+       <property name="text">
+        <string>Max: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="minLabel">
+       <property name="text">
+        <string>Min: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="meanLabel">
+       <property name="text">
+        <string>Mean: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="medianLabel">
+       <property name="text">
+        <string>Median: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="stdLabel">
+       <property name="text">
+        <string>Std: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lowerQuartileLabel">
+       <property name="text">
+        <string>Lower Quartile: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="upperQuartileLabel">
+       <property name="text">
+        <string>Upper Quartile: Waiting for data :)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="featureListTitle">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Feature List</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>330</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="sampleDataLabel">
+        <property name="text">
+         <string>Sample Data: Waiting for data :) </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="plotDistributionButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot Distribution</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plotBoxButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>370</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot Boxplot</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plotScatterButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>370</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot Scatterplot</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plotHeatMapButton">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>370</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot Heatmap</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="splitDataButton">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>334</y>
+      <width>89</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Split Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearSplittedSetsButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>430</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Splitted Sets</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="checkSplittedSetsButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>430</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check Splitted Sets</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
